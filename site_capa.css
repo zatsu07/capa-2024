@@ -1,0 +1,207 @@
+/* début css pour le menu déroulant */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(6, 6, 71);
+    padding: 10px;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+  }
+  
+  .logo {
+    max-width: 100px; /* Ajustez la largeur selon vos besoins */
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(6, 6, 71);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out; /* Ajout d'une transition plus courte */
+  }
+  
+  .menu.show {
+    max-height: 300px; /* Ou une valeur suffisamment grande pour montrer tous les éléments du menu */
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    float: none;
+    display: block;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .menu a:hover {
+    background-color: rgb(6, 6, 71);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(6, 6, 71);
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(6, 6, 71);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  @media screen and (max-width: 600px) {
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .header {
+      display: flex;
+      align-items: center;
+      background-color: rgb(6, 6, 71);
+      padding: 10px;
+    }
+    
+    .menu-icon {
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    
+    .bar {
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      margin: 6px 0;
+    }
+    
+    .logo {
+      max-width: 100px; /* Ajustez la largeur selon vos besoins */
+    }
+    
+    .menu {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(6, 6, 71);
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.5s ease-in-out; /* Ajout d'une transition plus courte */
+    }
+    
+    .menu.show {
+      max-height: 300px; /* Ou une valeur suffisamment grande pour montrer tous les éléments du menu */
+    }
+    
+    .menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .menu li {
+      float: none;
+      display: block;
+    }
+    
+    .menu a {
+      display: block;
+      padding: 15px 20px;
+      text-decoration: none;
+      color: white;
+    }
+    
+    .menu a:hover {
+      background-color: rgb(6, 6, 71);
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: rgb(6, 6, 71);
+      min-width: 160px;
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      display: block;
+      text-decoration: none;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: rgb(6, 6, 71);
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  }
+
+/* fin css pour le menu déroulant */
+
+
+
+h1{
+    text-align: center;
+    text-decoration: underline rgb(209, 10, 10);
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 100px;
+}
+
+.ligne-separation{
+    border-bottom: 5px solid rgb(6, 6, 71);
+    margin: 10px 0;
+}
+
+.image{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h4{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace
+}
